@@ -6,6 +6,9 @@ This is a digital weather app built using vanilla JavaScript. It allows users to
 # Preview
 ![Screenshot (9)](https://user-images.githubusercontent.com/73266650/212815532-0fc2a6ae-5873-46f1-b166-3643d38bff7b.png)
 
+**Link:** https://raw.githack.com/OliverMorla/myWeatherApp/main/index.html
+
+
 # Changelog
 **Date Format: mm/dd/yy**
 **01/17/23**
