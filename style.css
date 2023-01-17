@@ -1,0 +1,119 @@
+/* ===== Importing Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/* ===== Setting color variables ===== */
+:root{
+    --matteBlack: #28282B;
+    --matteBlackDark: #141414;
+}
+
+/* ===== Reset / Defaults ===== */
+*, *::before, *::after{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    color: #fff;
+    background: var(--matteBlackDark);
+    min-width: 400px;
+}
+
+.search-button{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.search-button a{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: .5rem;
+}
+.search-button > a img{
+    width: 35px;
+}
+
+/* ===== Search Button Menu ===== */
+
+[data-searchField]{
+    display: flex;
+    align-self: center;
+    font-size: 1.5rem;
+    max-width: 0px;
+    opacity: 0;
+    border-radius: 1rem;
+    color: #fff;
+    background: var(--matteBlack);
+    transition: max-width .25s ease-in-out, opacity .25s ease-in-out;
+}
+
+[data-countrySelection]{
+    display: flex;
+    align-self: center;
+    max-width: 0px;
+    opacity: 0;
+    margin-left: 1rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    color: #fff;
+    background: var(--matteBlack);
+    transition: max-width .25s ease-in-out, opacity .25s ease-in-out;
+}
+
+[data-searchField].active{
+    max-width: 500px;
+    opacity: 1;
+}
+
+[data-countrySelection].active{
+    max-width: 200px;
+    opacity: 1;
+}
+
+/* ===== Header wwrapper ===== */
+.header-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    background: var(--matteBlack);
+    align-items: center;
+    font-size: 1.5rem;
+    height: auto;
+    margin: .5rem;
+}
+
+.current-weather-icon{
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.current-weather-location{
+    margin-left: auto;
+    margin-right: 1rem;
+    font-size: clamp(2rem, 7vmin, 4rem);
+}
+
+/* .forecast-wrapper{
+    height: 20%;
+} */
+
+.details-wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 40%;
+    width: 50%;
+    margin: .5rem;
+    background: var(--matteBlack);
+}
+
+
