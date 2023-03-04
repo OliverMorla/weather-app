@@ -141,7 +141,7 @@ function showWeatherData(response){
                 main: currentWeatherType
             } = response.weather[0];
             
-            currentWeatherIconEl.src = `./svgs/${currentWeatherType}.svg `
+            currentWeatherIconEl.src = `svgs/${currentWeatherType}.svg `
 
             return currentWeatherType
         }
