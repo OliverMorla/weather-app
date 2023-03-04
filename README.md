@@ -3,6 +3,7 @@ This is a digital weather app built using vanilla JavaScript. It allows users to
 
 # Preview
 ![weatherapp-preview](https://user-images.githubusercontent.com/73266650/222912536-2dec39cb-d706-4243-89bf-7cabfc6b8789.gif)
+
 **Link:** https://raw.githack.com/OliverMorla/myWeatherApp/main/index.html
 
 # Installation
